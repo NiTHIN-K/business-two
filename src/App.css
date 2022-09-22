@@ -1,38 +1,198 @@
+html,
+body,
+#root,
 .App {
-  text-align: center;
+  height: 100%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.step-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#section1 {
+  background-color: #eef2f7;
+}
+
+#section2 {
+  height: 1500px;
+  background: linear-gradient(224deg, #ce71e0 0%, #489aff 100%);
+  position: relative;
+}
+
+.howsItWork:hover .down-arrow {
+  transform: scale(85%);
+}
+
+.howsItWork {
+  margin: 20px 0;
+  font-size: 35px;
+  cursor: pointer;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.down-arrow {
+  max-width: 40px;
+  margin-right: 10px;
+  transition-duration: 200ms;
+}
+
+.answer {
+  height: 0;
+  overflow: hidden;
+  transition-duration: 1000ms;
+}
+
+.answer.open {
+  height: 100%;
+}
+
+.faq-row-wrapper {
+  border-radius: 13px;
+  width: 90%;
+  position: absolute;
+  top: 30px;
+}
+
+.faq-row-wrapper .faq-row:last-child {
+  border: none;
+  border-bottom: none;
+}
+
+.faq-row-wrapper section.faq-title {
+  padding-left: 10px;
+}
+
+.row-title {
+  margin-left: 10px;
+}
+
+.faq-row-wrapper .faq-body .faq-row .row-content .row-content-text {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* .faq-row-wrapper .faq-body .faq-row:not(:last-child) .row-content .row-content-text{
+  margin-left: 20px;
+  margin-right: 20px;
+} */
+
+.step-top-gradient {
+  background-size: 400% 400%;
+  width: 500px;
+  height: 500px;
+  /* background: linear-gradient(270deg, #e66465, #9198e5); */
+  background: linear-gradient(80deg, #00dbff, #ff78e2);
+  background-size: 200% 200%;
+  mask-image: url(./images/stepone.png);
+  mask-mode: alpha;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  animation: colorspin 5s ease infinite;
+  max-height: 300px;
+}
+
+.step-bottom {
+  max-width: 500px;
+}
+
+.step-image img {
+  max-width: 300px;
+  height: 300px;
+}
+
+@keyframes colorspin {
+  0% {
+    background-position: 0% 59%
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    background-position: 100% 42%
+  }
+
+  100% {
+    background-position: 0% 59%
+  }
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step-content {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.examples {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.example-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 7px;
+  background-color: #eef2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* write a light box shadow */
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  color: #b8b8f3;
+}
+
+.faq {
+  /* keep at top of view */
+  position: absolute;
+  top: 100px;
+}
+
+.step-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#step-one .step-image>*{
+  height: 150px;
+  max-width: 300px;
+  }
+
+@media only screen and (max-width: 600px){
+  .step-list{
+    flex-direction: column;
+  }
+  .step-image img{
+    max-width: 200px;
+    height: 200px;
+  }
+  #step-one .step-image>*{
+    max-width: 200px;
+    height: 100px;
   }
 }
