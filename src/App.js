@@ -13,8 +13,8 @@ const data = {
     {
       title: "What exactly does the antenna do?",
       content: <p>The antenna and its associated hardware will broadcast your internet connection through a 5G wireless signal that phones can connect to.
-        It's essentially a wireless router, but with a 5G signal. Customers of <a rel="noopener noreferrer" href='https://www.pollenmobile.io/how-it-works'>Pollen Mobile</a> and <a rel="noopener noreferrer" href='https://hellohelium.com/'>Helium Mobile</a>
-        will be able to connect to the internet through your setup.</p>,
+        It's essentially a wireless router, but with a 5G signal. Customers of <a rel="noopener noreferrer" href='https://www.pollenmobile.io/how-it-works'>Pollen Mobile</a> and <a rel="noopener noreferrer" href='https://hellohelium.com/'>Helium Mobile</a> will 
+        be able to connect to the internet through your setup.</p>,
     },
     {
       title: "How is the antenna installed?",
@@ -80,6 +80,9 @@ function App() {
             <div className='step-content'>
               🛠 We set up
             </div>
+            <div className='step-content-lower'>
+              5g antenna(s) on your roof, for free!
+            </div>
           </div>
           <div className='step' id='step-two'>
             <div className='step-image'>
@@ -88,6 +91,9 @@ function App() {
             <div className='step-content'>
               📶 Customers connect
             </div>
+            <div className='step-content-lower'>
+              to the internet through your antenna(s). They will pay Pollen and Helium for the service.
+            </div>
           </div>
           <div className='step' id='step-three'>
             <div className='step-image'>
@@ -95,6 +101,9 @@ function App() {
             </div>
             <div className='step-content'>
               💰 Get rewards!!
+            </div>
+            <div className='step-content-lower'>
+              Those funds come back to you for letting customers use your antenna(s)!
             </div>
           </div>
 

@@ -6,7 +6,7 @@ body,
 }
 
 .section {
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,8 @@ body,
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 #section1 {
@@ -42,6 +43,7 @@ body,
   display: flex;
   align-items: center;
   font-weight: bolder;
+  position: absolute;
 }
 
 .down-arrow {
@@ -116,6 +118,10 @@ body,
   height: 300px;
 }
 
+.step-content-lower{
+  max-width: 300px;
+}
+
 @keyframes colorspin {
   0% {
     background-position: 0% 59%
@@ -188,11 +194,15 @@ a {
     flex-direction: column;
   }
   .step-image img{
-    max-width: 200px;
-    height: 200px;
+    max-width: 150px;
+    height: 150px;
   }
   #step-one .step-image>*{
     max-width: 200px;
+    height: 100px;
+  }
+  #step-three .step-image>*{
+    max-width: 100px;
     height: 100px;
   }
 }
