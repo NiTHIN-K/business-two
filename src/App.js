@@ -12,7 +12,7 @@ const data = {
     {
       title: "What exactly does the antenna do?",
       content: <p>The antenna and its associated hardware will broadcast your internet (through an ethernet cable from your router/modem) connection through a 5G wireless signal that phones can connect to.
-        It's essentially a wireless router, but with a 5G signal. Customers of <a rel="noopener noreferrer" href='https://www.pollenmobile.io/how-it-works'>Pollen Mobile</a> and <a rel="noopener noreferrer" href='https://hellohelium.com/'>Helium Mobile</a> will 
+        It's essentially a wireless router, but with a 5G signal. Customers of <a rel="noopener noreferrer" href='https://www.pollenmobile.io/how-it-works'>Pollen Mobile</a> and <a rel="noopener noreferrer" href='https://hellohelium.com/'>Helium Mobile</a> will
         be able to connect to the internet through your setup.</p>,
     },
     {
@@ -71,7 +71,7 @@ function App() {
     <div className="App">
       <div className="section" id="section1">
         <h1 className='headline'>
-          Provide great 5G coverage to your community? <br/> And <span className='underline'>get paid</span> for it? Yes please. Get started in 3 steps:
+          Provide great 5G coverage to your community? <br /> And <span className='underline'>get paid</span> for it? Yes please. <br/> Get started in 3 steps:
         </h1>
         <div className='step-list'>
           <div className='step' id='step-one'>
@@ -79,33 +79,43 @@ function App() {
               <div className='step-top-gradient'></div>
               <img src={stepOneBuildings} className='step-bottom'></img>
             </div>
-            <div className='step-content'>
-              🛠 We set up
-            </div>
-            <div className='step-content-lower'>
-              5g antenna(s) on your roof, for free!
+            <div class="step-text-parent">
+              <div className='step-number'>
+                🛠
+              </div>
+              <div class="step-text">
+                <div class="step-content">We set up</div>
+                <div class="step-content-lower">5g antenna(s) on your roof, for free!</div>
+              </div>
             </div>
           </div>
           <div className='step' id='step-two'>
             <div className='step-image'>
               <img src={stepTwo} className='step-top'></img>
             </div>
-            <div className='step-content'>
-              📶 Customers connect
-            </div>
-            <div className='step-content-lower'>
-              to the internet through your antenna(s). They will pay Pollen and Helium for the service.
+            <div class="step-text-parent">
+              <div className='step-number'>
+                📶
+              </div>
+              <div class="step-text">
+                <div class="step-content">Customers connect</div>
+                <div class="step-content-lower">to the internet through your antenna(s).
+                  They will pay Pollen and Helium for the service.</div>
+              </div>
             </div>
           </div>
           <div className='step' id='step-three'>
             <div className='step-image'>
               <img src={stepThree} className='step-top'></img>
             </div>
-            <div className='step-content'>
-              💰 Get rewards!!
-            </div>
-            <div className='step-content-lower'>
-              Those funds come back to you for letting customers use your antenna(s)!
+            <div class="step-text-parent">
+              <div className='step-number'>
+                💰
+              </div>
+              <div class="step-text">
+                <div class="step-content">Get rewards!!</div>
+                <div class="step-content-lower">Those funds come back to you for letting customers use your setup!</div>
+              </div>
             </div>
           </div>
 

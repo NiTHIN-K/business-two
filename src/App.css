@@ -207,6 +207,7 @@ a {
 }
 
 .step-image {
+  max-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,12 +219,29 @@ a {
   max-width: 300px;
 }
 
+.step-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number {
+  font-size: 33px;
+  margin-right: 10px;
+  /* text-align: center; */
+}
+
+.step-text-parent{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
 @media only screen and (max-width: 600px) {
   .headline {
     margin-bottom: 20px;
     margin-top: 30px;
-    font-size: 14px;
-    max-width: 85%;
+    font-size: 15px;
+    max-width: 90%;
   }
 
   .examples {
