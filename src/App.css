@@ -5,6 +5,18 @@ body,
   height: 100%
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.headline{
+  margin-bottom: 50px;
+  max-width: 900px;
+  text-align: center;
+/* set at the top of the section */
+  /* margin-top: 0; */
+}
+
 .section {
   height: 100vh;
   display: flex;
@@ -85,7 +97,11 @@ body,
   font-weight: bold;
 }
 
-.faq-row{
+.row-title-text {
+  text-shadow: 0 0 4px black;
+}
+
+.faq-row {
   padding: 10px !important;
 }
 
@@ -125,7 +141,7 @@ body,
   height: 300px;
 }
 
-.step-content-lower{
+.step-content-lower {
   max-width: 300px;
 }
 
@@ -156,14 +172,16 @@ body,
 
 .examples {
   display: flex;
+  height: 300px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 20px 0;
-  overflow-x: scroll;
+  /* overflow: scroll; */
 }
 
 .example-image {
+  scroll-snap-align: left;
   margin-right: 10px;
   width: 300px;
   height: 300px;
@@ -184,7 +202,7 @@ a {
   top: 100px;
 }
 
-.faq-row-wrapper *{
+.faq-row-wrapper * {
   color: white !important;
 }
 
@@ -195,36 +213,53 @@ a {
   justify-content: center;
 }
 
-#step-one .step-image>*{
+#step-one .step-image>* {
   height: 150px;
   max-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headline {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    max-width: 85%;
   }
 
-@media only screen and (max-width: 600px){
-  .examples{
+  .examples {
     justify-content: flex-start;
-    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
   }
 
-  .section{
+  .section {
     height: fit-content;
   }
-  .howsItWork{
+
+  .howsItWork {
     position: relative;
     bottom: 0;
   }
-  .step-list{
+
+  .step-list {
     flex-direction: column;
   }
-  .step-image img{
+
+  .step-image img {
     max-width: 150px;
     height: 150px;
   }
-  #step-one .step-image>*{
+
+  #step-one .step-image>* {
     max-width: 200px;
     height: 100px;
   }
-  #step-three .step-image>*{
+
+  #step-one .step-image .step-bottom {
+    max-width: 200px;
+    height: 75px;
+  }
+
+  #step-three .step-image>* {
     max-width: 100px;
     height: 100px;
   }
