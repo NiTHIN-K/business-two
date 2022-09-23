@@ -8,7 +8,6 @@ import stepThree from './images/stepthree.png';
 import downArrow from './images/down-arrow.png';
 
 const data = {
-  title: "FAQ (How it works)",
   rows: [
     {
       title: "What exactly does the antenna do?",
@@ -49,7 +48,7 @@ const data = {
 };
 
 const styles = {
-  bgColor: '#3A3B3C',
+  bgColor: 'rgba(0,0,0,0.3)',
   titleTextColor: "#afece7",
   rowTitleColor: "#afece7",
   rowContentColor: 'white',
@@ -108,7 +107,7 @@ function App() {
           </div>
 
         </div>
-        <div onClick={() => document.getElementById("section2").scrollIntoView({ behavior: 'smooth' })} className='howsItWork'>
+        <div onClick={() => document.getElementById("howsItWork").scrollIntoView({ behavior: 'smooth' })} className='howsItWork' id='howsItWork'>
           <img className='down-arrow' src={downArrow}></img>
           How's it work?
         </div>
