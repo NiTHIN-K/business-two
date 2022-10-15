@@ -13,6 +13,7 @@ body,
   margin-bottom: 50px;
   max-width: 900px;
   text-align: center;
+  font-weight: 300;
 /* set at the top of the section */
   /* margin-top: 0; */
 }
@@ -163,6 +164,7 @@ body,
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative!important;
 }
 
 .step-content {
@@ -233,7 +235,10 @@ a {
 .step-text-parent{
   display: flex;
   flex-direction: row;
-  margin-bottom: 25px;
+  margin-bottom: 30px!important;
+  height: 100px!important;
+  margin-top: 20px!important;
+  align-items: center!important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -337,4 +342,27 @@ form button {
   margin-top: 30px;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.faq-row-wrapper form textarea, .faq-row-wrapper form input{
+  color: #000!important;
+}
+
+#step-number-one{
+  font-size: 42px;
+  margin-right: 12px;
+}
+#step-number-two{
+  font-size: 40px;
+  margin-right: 18px;
+}
+#step-number-three{
+  font-size: 54px;
+  margin-right: 10px;
+}
+
+.main-headline {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }

@@ -46,7 +46,7 @@ const data = {
     },
     {
       title: "I'm interested! How do I get started?",
-      content: 
+      content:
         <form
           action="https://formbold.com/s/3L5ko"
           method="POST"
@@ -89,7 +89,7 @@ function App() {
     <div className="App">
       <div className="section" id="section1">
         <h1 className='headline'>
-          Provide great 5G coverage to your community? <br /> And <span className='underline'>get paid</span> for it? Yes please. <br /> Get started in 3 steps:
+          <span className='main-headline'>Provide great 5G coverage to your community?</span> <br /> And <span className='underline'>get paid</span> for it? Yes please. <br /> Get started in 3 steps:
         </h1>
         <div className='step-list'>
           <div className='step' id='step-one'>
@@ -98,7 +98,7 @@ function App() {
               <img src={stepOneBuildings} className='step-bottom'></img>
             </div>
             <div class="step-text-parent">
-              <div className='step-number'>
+              <div id="step-number-one" className='step-number'>
                 🛠
               </div>
               <div class="step-text">
@@ -112,8 +112,8 @@ function App() {
               <img src={stepTwo} className='step-top'></img>
             </div>
             <div class="step-text-parent">
-              <div className='step-number'>
-                📶
+              <div id="step-number-two" className='step-number'>
+                📡
               </div>
               <div class="step-text">
                 <div class="step-content">Customers connect</div>
@@ -127,7 +127,7 @@ function App() {
               <img src={stepThree} className='step-top'></img>
             </div>
             <div class="step-text-parent">
-              <div className='step-number'>
+              <div id="step-number-three" className='step-number'>
                 💰
               </div>
               <div class="step-text">
