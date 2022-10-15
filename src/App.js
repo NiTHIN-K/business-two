@@ -44,6 +44,24 @@ const data = {
       title: "What if my roof/installation site doesn't have ethernet access?",
       content: `We can work with you to find a solution. We can provide another router or powerline adapter that will allow an ethernet cable on the roof.`
     },
+    {
+      title: "I'm interested! How do I get started?",
+      content: 
+        <form
+          action="https://formbold.com/s/3L5ko"
+          method="POST"
+          target="dummy">
+          <label>
+            Your email address:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Describe your potential location, and ask any questions you need answered:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+    }
   ]
 };
 
@@ -71,7 +89,7 @@ function App() {
     <div className="App">
       <div className="section" id="section1">
         <h1 className='headline'>
-          Provide great 5G coverage to your community? <br /> And <span className='underline'>get paid</span> for it? Yes please. <br/> Get started in 3 steps:
+          Provide great 5G coverage to your community? <br /> And <span className='underline'>get paid</span> for it? Yes please. <br /> Get started in 3 steps:
         </h1>
         <div className='step-list'>
           <div className='step' id='step-one'>
@@ -131,6 +149,8 @@ function App() {
           styles={styles}
           config={config}
         />
+        <iframe name="dummy" style={{ display: 'none' }}>
+        </iframe>
       </div>
     </div>
   );
