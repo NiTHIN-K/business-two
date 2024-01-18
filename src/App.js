@@ -10,7 +10,7 @@ import downArrow from './images/down-arrow.png';
 const data = {
   rows: [
     {
-      title: "What exactly does the antenna do?",
+      title: "What exactly does the dashcam do?",
       content: <p>The antenna and its associated hardware will broadcast your internet (through an ethernet cable from your router/modem) connection through a 5G wireless signal that phones can connect to.
         It's essentially a wireless router, but with a 5G signal. Customers of <a rel="noopener noreferrer" href='https://www.pollenmobile.io/how-it-works'>Pollen Mobile</a> and <a rel="noopener noreferrer" href='https://hellohelium.com/'>Helium Mobile</a> will
         be able to connect to the internet through your setup.</p>,
@@ -56,7 +56,7 @@ const data = {
             <input type="email" name="email" />
           </label>
           <label>
-            Describe your potential location, and ask any questions you need answered:
+            Describe your location, driving frequency/schedule, and ask any questions you need answered:
             <textarea name="message"></textarea>
           </label>
           <button type="submit">Send</button>
@@ -74,9 +74,7 @@ const styles = {
 };
 
 const config = {
-  // animate: true,
-  // arrowIcon: "V",
-  // tabFocus: true
+  defaultActiveKey: ["6"], // Add this line
 };
 
 function App() {
@@ -89,7 +87,7 @@ function App() {
     <div className="App">
       <div className="section" id="section1">
         <h1 className='headline'>
-          <span className='main-headline'>Provide great 5G coverage to your community?</span> <br /> And <span className='underline'>get paid</span> for it? Yes please. <br /> Get started in 3 steps:
+          <span className='main-headline'>Drive often?</span> <br /> Why not get paid extra for it?? <br /> Get started in 3 steps:
         </h1>
         <div className='step-list'>
           <div className='step' id='step-one'>
@@ -102,8 +100,8 @@ function App() {
                 🛠
               </div>
               <div class="step-text">
-                <div class="step-content">We set up</div>
-                <div class="step-content-lower">5g antenna(s) on your roof, for free!</div>
+                <div class="step-content">We Set Up</div>
+                <div class="step-content-lower">A 4K Dashcam in your car, for free!</div>
               </div>
             </div>
           </div>
@@ -116,9 +114,8 @@ function App() {
                 📡
               </div>
               <div class="step-text">
-                <div class="step-content">Customers connect</div>
-                <div class="step-content-lower">to the internet through your antenna(s).
-                  They will pay Pollen and Helium for the service.</div>
+                <div class="step-content">Just Drive</div>
+                <div class="step-content-lower">The dashcam will record road imagery. A companion phone app will upload that data to the cloud.</div>
               </div>
             </div>
           </div>
@@ -132,7 +129,7 @@ function App() {
               </div>
               <div class="step-text">
                 <div class="step-content">Get rewards!!</div>
-                <div class="step-content-lower">Those funds come back to you for letting customers use your setup!</div>
+                <div class="step-content-lower">Get paid weekly for doing what you already do!</div>
               </div>
             </div>
           </div>
